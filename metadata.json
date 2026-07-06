@@ -1,0 +1,6 @@
+{
+  "name": "ElectroSmart",
+  "description": "Landing page ElectroSmart - Mantenimiento Eléctrico Profesional con Historial Digital",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroSmart - Mantenimiento Eléctrico Profesional con Historial Digital</title>
+    <!-- Google Fonts: Montserrat (600, 700) e Inter (400, 500) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Enlace a estilos externos -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Enlace a script externo con defer -->
+    <script src="script.js" defer></script>
+</head>
+<body class="site-body">
+
+    <!-- 1. Header -->
+    <header id="site-header" class="main-header">
+        <div class="header-container">
+            <div class="header-logo">
+                <a href="#" class="logo-container">
+                    <img src="img/logo-icon.png" alt="ElectroSmart Icon" class="logo-image" />
+                    <span class="logo-text"><span class="logo-electro">Electro</span><span class="logo-smart">Smart</span></span>
+                </a>
+            </div>
+            
+            <button class="hamburger-menu" id="hamburger-btn" aria-label="Abrir menú de navegación">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="header-menu-wrapper" id="header-menu-wrapper">
+                <nav id="main-navigation" class="header-nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
+                        <li class="nav-item"><a href="#sobre-nosotros" class="nav-link">Nosotros</a></li>
+                        <li class="nav-item"><a href="#servicios" class="nav-link">Servicios</a></li>
+                        <li class="nav-item"><a href="#historial" class="nav-link">Historial</a></li>
+                        <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+                        <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+                    </ul>
+                </nav>
+                <div class="header-cta">
+                    <a href="https://wa.me/51906813652?text=%C2%A1Hola%2C%20equipo%20de%20ElectroSmart%21%20Estoy%20buscando%20un%20servicio%20de%20mantenimiento%20el%C3%A9ctrico%20confiable.%20%C2%BFPodr%C3%ADan%20brindarme%20informaci%C3%B3n%20sobre%20sus%20servicios%3F%20%C2%A1Gracias%21" id="btn-cta-header" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">Solicitar mantenimiento por WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+
+        <!-- 2. Hero Section -->
+        <section id="inicio" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-text-content">
+                    <h1 class="hero-title">Mantenimiento Eléctrico Profesional con <span class="text-highlight">Historial Digital</span></h1>
+                    <p class="hero-description">Garantiza la seguridad de tu familia con nuestro servicio técnico formal y especializado. Soluciones preventivas y correctivas con un registro digital accesible 24/7.</p>
+                    <div class="hero-actions">
+                        <a href="https://wa.me/51906813652?text=%C2%A1Hola%2C%20equipo%20de%20ElectroSmart%21%20Estoy%20buscando%20un%20servicio%20de%20mantenimiento%20el%C3%A9ctrico%20confiable.%20%C2%BFPodr%C3%ADan%20brindarme%20informaci%C3%B3n%20sobre%20sus%20servicios%3F%20%C2%A1Gracias%21" id="btn-cta-hero-whatsapp" class="btn btn-primary btn-whatsapp" target="_blank" rel="noopener noreferrer">Solicitar mantenimiento por WhatsApp</a>
+                        <a href="#historial" id="btn-cta-hero-history" class="btn btn-secondary btn-outline">Consultar mi informe técnico</a>
+                    </div>
+                </div>
+                <div class="hero-visual-placeholder">
+                    <!-- Contenedor vacío reservado para gráficos o ilustraciones futuras -->
+                    <div class="hero-illustration-box"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Sobre Nosotros -->
+        <section id="sobre-nosotros" class="about-section">
+            <div class="section-header text-center">
+                <h2>Sobre Nosotros</h2>
+            </div>
+            <div class="about-container">
+                <!-- Columna Izquierda (Ancla Visual Estática) -->
+                <div class="about-visual">
+                    <video autoplay loop muted playsinline class="video-nosotros">
+                        <source src="video/animacion-nosotros.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <!-- Columna Derecha (Área Dinámica / Carrusel) -->
+                <div class="about-carousel-column">
+                    <div class="philosophy-slider-container">
+                        <div class="slider-viewport">
+                            <div class="slider-track" id="philosophy-track">
+                                <!-- Tarjeta 1 (Slide 1): Energía Inteligente -->
+                                <div class="philosophy-card active">
+                                    <span class="philosophy-badge">⚡ Innovación & Seguridad</span>
+                                    <h2 class="philosophy-card-title">Energía Inteligente, Hogares Seguros</h2>
+                                    <p class="philosophy-card-text">En ElectroSmart combinamos la experiencia técnica con la innovación tecnológica. No solo resolvemos fallas o prevenimos cortocircuitos; te entregamos transparencia total. Somos el único servicio en la región que te proporciona un historial digital detallado de cada trabajo realizado en tu vivienda, accesible instantáneamente solo con tu DNI o RUC. Confianza, formalidad y seguridad en un solo lugar.</p>
+                                </div>
+
+                                <!-- Tarjeta 2 (Slide 2): Nuestro Equipo y Filosofía -->
+                                <div class="philosophy-card">
+                                    <span class="philosophy-badge">⚡ Nuestro Origen</span>
+                                    <h3 class="philosophy-card-title-sub">Nuestro Equipo y Filosofía</h3>
+                                    <p class="philosophy-card-text">Detrás de ElectroSmart hay un equipo comprometido de cuatro jóvenes estudiantes de la Institución Educativa Jesús Maestro. Este proyecto nace de nuestra formación técnica en electricidad, pero sobre todo, del profundo deseo de llevar a la práctica los valores que fundamentan nuestro ideal educativo. No solo buscamos resolver fallas eléctricas; buscamos transformar la vida de nuestro entorno garantizando hogares más seguros.</p>
+                                </div>
+                                
+                                <!-- Tarjeta 3 (Slide 3): Responsabilidad, Libertad y Solidaridad -->
+                                <div class="philosophy-card">
+                                    <span class="philosophy-badge">🕊️ Identidad y Valores</span>
+                                    <h3 class="philosophy-card-title-sub">Responsabilidad, Libertad y Solidaridad</h3>
+                                    <p class="philosophy-card-text">Fieles al carisma de nuestro colegio, basamos nuestro servicio en pilares inquebrantables. Actuamos con total responsabilidad y autonomía en cada diagnóstico, aplicando un riguroso juicio crítico para ofrecer soluciones reales y formales. Vivimos nuestra identidad cristiana a través de una fuerte sensibilidad solidaria, entendiendo que proteger la seguridad de una familia es un acto de amor y servicio a la comunidad.</p>
+                                </div>
+                                
+                                <!-- Tarjeta 4 (Slide 4): Una Comunidad Fraterna a tu Servicio -->
+                                <div class="philosophy-card">
+                                    <span class="philosophy-badge">🤝 Fraternidad en Acción</span>
+                                    <h3 class="philosophy-card-title-sub">Una Comunidad Fraterna a tu Servicio</h3>
+                                    <p class="philosophy-card-text">En ElectroSmart, reflejamos el trabajo conjunto que aprendemos en nuestras aulas junto a nuestras religiosas, profesores y familias. Llevamos ese mismo clima de nuestra escuela a tu hogar: te garantizamos una atención caracterizada por la alegría, la sencillez, la cercanía y un trato siempre respetuoso. Con convicciones firmes y carácter, somos jóvenes trabajando para llevar tranquilidad, innovación y luz a tu familia.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Controles del carrusel deslizante (centrados debajo de la columna derecha) -->
+                        <div class="slider-controls">
+                            <button class="slider-nav-btn prev-btn" id="phi-prev-btn" aria-label="Tarjeta Anterior" type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                            </button>
+                            <div class="slider-dots" id="phi-dots">
+                                <span class="slider-dot active" data-index="0"></span>
+                                <span class="slider-dot" data-index="1"></span>
+                                <span class="slider-dot" data-index="2"></span>
+                                <span class="slider-dot" data-index="3"></span>
+                            </div>
+                            <button class="slider-nav-btn next-btn" id="phi-next-btn" aria-label="Tarjeta Siguiente" type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carrusel de Marcas de Confianza (Estático) -->
+        <section id="marcas-confianza" class="brands-section">
+            <div class="brands-container">
+                <p class="brands-title">Trabajamos con materiales normados de las mejores marcas:</p>
+                <div class="brands-logos-grid">
+                    <img src="src/assets/images/regenerated_image_1783297115124.png" alt="Indeco" class="brand-logo" />
+                    <img src="src/assets/images/regenerated_image_1783297335249.png" alt="Bticino" class="brand-logo" />
+                    <img src="src/assets/images/regenerated_image_1783297042944.png" alt="Schneider Electric" class="brand-logo" />
+                    <img src="src/assets/images/regenerated_image_1783296866713.webp" alt="General Electric" class="brand-logo" />
+                    <img src="src/assets/images/regenerated_image_1783297416242.png" alt="Celsa" class="brand-logo" />
+                    <img src="src/assets/images/regenerated_image_1783297416960.jpg" alt="Legrand" class="brand-logo" />
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Servicios -->
+        <section id="servicios" class="services-section">
+            <div class="services-container">
+                <h2 class="services-section-title">Nuestras Soluciones Eléctricas Monofásicas</h2>
+                <div class="services-grid">
+                    
+                    <!-- Tarjeta 1 -->
+                    <article id="service-card-1" class="service-card">
+                        <div class="service-icon-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#0055FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22" class="service-icon">
+                                <rect x="8" y="2" width="8" height="4" rx="1" ry="1"/>
+                                <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
+                                <path d="M9 14h6"/>
+                                <path d="M9 18h6"/>
+                                <path d="M12 8v2"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Inspección y mantenimiento de tableros eléctricos</h3>
+                    </article>
+
+                    <!-- Tarjeta 2 -->
+                    <article id="service-card-2" class="service-card">
+                        <div class="service-icon-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#0055FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22" class="service-icon">
+                                <path d="M12 3v3m0 12v3m9-9h-3M6 12H3m14-5l-2.5 2.5M8.5 14.5L6 17m11 0l-2.5-2.5M8.5 9.5L6 7"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Limpieza interna de tableros eléctricos</h3>
+                    </article>
+
+                    <!-- Tarjeta 3 -->
+                    <article id="service-card-3" class="service-card">
+                        <div class="service-icon-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#0055FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22" class="service-icon">
+                                <path d="M2 12h5l3.5-7 3 14 3.5-7h5"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Revisión de cableado eléctrico</h3>
+                    </article>
+
+                    <!-- Tarjeta 4 -->
+                    <article id="service-card-4" class="service-card">
+                        <div class="service-icon-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#0055FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22" class="service-icon">
+                                <rect x="4" y="4" width="16" height="16" rx="3" ry="3"/>
+                                <circle cx="9" cy="12" r="1.5"/>
+                                <circle cx="15" cy="12" r="1.5"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Revisión y mantenimiento de tomacorrientes</h3>
+                    </article>
+
+                    <!-- Tarjeta 5 -->
+                    <article id="service-card-5" class="service-card">
+                        <div class="service-icon-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#0055FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22" class="service-icon">
+                                <rect x="4" y="4" width="16" height="16" rx="3"/>
+                                <path d="M12 8v8"/>
+                                <path d="M9 12h6"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Revisión y mantenimiento de interruptores</h3>
+                    </article>
+
+                    <!-- Tarjeta 6 -->
+                    <article id="service-card-6" class="service-card">
+                        <div class="service-icon-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#0055FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22" class="service-icon">
+                                <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A5 5 0 0 0 8 8c0 1.3.5 2.6 1.5 3.5.8.8 1.3 1.5 1.5 2.5"/>
+                                <line x1="9" y1="18" x2="15" y2="18"/>
+                                <line x1="10" y1="21" x2="14" y2="21"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Revisión de luminarias</h3>
+                    </article>
+
+                    <!-- Tarjeta 7 -->
+                    <article id="service-card-7" class="service-card">
+                        <div class="service-icon-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#0055FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22" class="service-icon">
+                                <line x1="12" y1="2" x2="12" y2="14"/>
+                                <line x1="6" y1="14" x2="18" y2="14"/>
+                                <line x1="8" y1="17" x2="16" y2="17"/>
+                                <line x1="10" y1="20" x2="14" y2="20"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Medición del sistema de puesta a tierra</h3>
+                    </article>
+
+                    <!-- Tarjeta 8 -->
+                    <article id="service-card-8" class="service-card">
+                        <div class="service-icon-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#0055FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22" class="service-icon">
+                                <rect x="4" y="3" width="16" height="18" rx="2" ry="2"/>
+                                <path d="M12 7v4"/>
+                                <path d="M12 15v2"/>
+                                <circle cx="12" cy="13" r="1"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Cambio de llaves termomagnéticas</h3>
+                    </article>
+
+                    <!-- Tarjeta 10 -->
+                    <article id="service-card-10" class="service-card">
+                        <div class="service-icon-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#0055FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22" class="service-icon">
+                                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Corrección de conexiones defectuosas</h3>
+                    </article>
+
+                    <!-- Tarjeta 11 -->
+                    <article id="service-card-11" class="service-card">
+                        <div class="service-icon-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#0055FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22" class="service-icon">
+                                <path d="M3 12a9 9 0 0 1 15-6.7L12 12"/>
+                                <circle cx="12" cy="12" r="1"/>
+                                <path d="M12 17H12.01"/>
+                                <path d="M21 12c0 4.4-3.6 8-8 8s-8-3.6-8-8"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Diagnóstico de fallas eléctricas</h3>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Por qué elegirnos -->
+        <section id="porque-elegirnos" class="why-us-section">
+            <div class="why-us-container">
+                <div class="why-us-text-content">
+                    <h2 class="why-us-title">¿Por qué elegir ElectroSmart?</h2>
+                    <p class="why-us-description">Olvídate de la incertidumbre y los técnicos informales. Trabajamos bajo estrictos protocolos de seguridad, utilizando equipos de protección y garantizando un orden absoluto en tu hogar. Explora nuestra galería y comprueba la calidad de nuestro trabajo de técnico electricista en Miramar y alrededores.</p>
+                </div>
+                <div class="why-us-gallery-container">
+                    <!-- Image Comparison Slider (Antes y Después) de ElectroSmart -->
+                    <div class="comparison-slider" id="comparison-slider">
+                        <!-- Imagen de fondo (Después: Resultado Profesional) -->
+                        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80&w=800" alt="Instalación Eléctrica Ordenada y Segura por ElectroSmart" class="image-after">
+                        
+                        <!-- Imagen superior (Antes: Instalación de alto riesgo) -->
+                        <img src="https://images.unsplash.com/photo-1555664424-778a1e5e1b48?auto=format&fit=crop&q=80&w=800" alt="Instalación Eléctrica Desordenada y de Alto Riesgo" class="image-before" id="image-before">
+                        
+                        <!-- Etiquetas flotantes elegantes -->
+                        <span class="slider-label label-before">Antes</span>
+                        <span class="slider-label label-after">Después</span>
+                        
+                        <!-- Línea divisoria vertical con botón de arrastre -->
+                        <div class="slider-divider" id="slider-divider">
+                            <div class="slider-divider-line"></div>
+                            <div class="slider-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="slider-button-icon">
+                                    <polyline points="8 17 3 12 8 7"></polyline>
+                                    <polyline points="16 17 21 12 16 7"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                        <!-- Control de rango nativo invisible para interactividad perfecta -->
+                        <input type="range" min="0" max="100" value="50" class="slider-control" id="slider-control" aria-label="Deslizador de comparación de antes y después">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Buscador -->
+        <section id="historial" class="search-section">
+            <div class="search-container">
+                <h2 class="search-title">Consulta tu Historial Técnico</h2>
+                <p class="search-description">Ingresa tu número de DNI o RUC para acceder a tu informe digital al instante.</p>
+                <div class="search-form-group">
+                    <input type="text" id="input-historial" class="form-control" placeholder="Escribe tu DNI o RUC aquí" aria-label="Número de DNI o RUC">
+                    <button type="button" id="btn-buscar-historial" class="btn btn-primary">Buscar</button>
+                </div>
+                <p id="mensaje-historial" style="color: #FFD700; display: none; margin-top: 10px; font-weight: bold;"></p>
+                <!-- Div reservado para mostrar resultados futuros vía script -->
+                <div id="search-results" class="results-container"></div>
+            </div>
+        </section>
+
+        <!-- 7. Consejos -->
+        <section id="consejos" class="tips-section">
+            <div class="tips-container">
+                <h2 class="tips-section-title">Protege a tu familia: Consejos clave</h2>
+                <div class="tips-grid">
+
+                    <!-- Tarjeta Consejo 1 -->
+                    <article id="tip-card-1" class="tip-card">
+                        <div class="tip-card-header">
+                            <h3 class="tip-title">Evita las sobrecargas</h3>
+                        </div>
+                        <p class="tip-paragraph">No conectes múltiples artefactos de alto consumo de energía en un mismo tomacorriente. Esto evita el calentamiento excesivo de los cables y elimina el riesgo latente de cortocircuitos o amagos de incendio.</p>
+                    </article>
+
+                    <!-- Tarjeta Consejo 2 -->
+                    <article id="tip-card-2" class="tip-card">
+                        <div class="tip-card-header">
+                            <h3 class="tip-title">Mantenimiento preventivo</h3>
+                        </div>
+                        <p class="tip-paragraph">Programa una revisión profesional de tus instalaciones eléctricas al menos una vez al año. Detectar un cable flojo o dañado a tiempo puede prevenir costosas reparaciones de emergencia y resguardar tu integridad.</p>
+                    </article>
+
+                    <!-- Tarjeta Consejo 3 -->
+                    <article id="tip-card-3" class="tip-card">
+                        <div class="tip-card-header">
+                            <h3 class="tip-title">Señales de alerta</h3>
+                        </div>
+                        <p class="tip-paragraph">Presta atención a luces que parpadean sin motivo, ruidos extraños detrás de las paredes o tomacorrientes que se sienten tibios. Son señales inequívocas de fallas que requieren atención especializada inmediata.</p>
+                    </article>
+
+                    <!-- Tarjeta Consejo 4 -->
+                    <article id="tip-card-4" class="tip-card">
+                        <div class="tip-card-header">
+                            <h3 class="tip-title">Uso de interruptores diferenciales</h3>
+                        </div>
+                        <p class="tip-paragraph">Asegúrate de tener un interruptor diferencial operativo instalado en tu tablero. Este vital componente eléctrico corta instantáneamente la energía en milisegundos si detecta una fuga de corriente protegiendo vidas humanas.</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. FAQ -->
+        <section id="faq" class="faq-section">
+            <div class="faq-container">
+                <h2 class="faq-section-title">Preguntas Frecuentes</h2>
+                <div class="faq-accordion">
+
+                    <!-- Pregunta 1 -->
+                    <details id="faq-item-1" class="faq-item">
+                        <summary class="faq-question">¿Qué es el historial técnico digital y cómo accedo a él?</summary>
+                        <div class="faq-answer">
+                            <p>Es un registro digital detallado que documenta todo el mantenimiento, diagnóstico y cambios realizados en tu domicilio. Puedes consultarlo en cualquier momento ingresando tu DNI o RUC en el buscador de nuestra web.</p>
+                        </div>
+                    </details>
+
+                    <!-- Pregunta 2 -->
+                    <details id="faq-item-2" class="faq-item">
+                        <summary class="faq-question">¿Con qué frecuencia se debe realizar un mantenimiento preventivo?</summary>
+                        <div class="faq-answer">
+                            <p>Recomendamos realizar una revisión y mantenimiento preventivo integral en las instalaciones eléctricas residenciales al menos una vez al año para asegurar el correcto funcionamiento del sistema y proteger a tu familia.</p>
+                        </div>
+                    </details>
+
+                    <!-- Pregunta 4 -->
+                    <details id="faq-item-4" class="faq-item">
+                        <summary class="faq-question">¿Todos sus técnicos están calificados y cuentan con equipos de seguridad?</summary>
+                        <div class="faq-answer">
+                            <p>Sí, por supuesto. Todos nuestros electricistas son técnicos especializados que operan bajo rigurosos protocolos de protección, utilizando herramientas dieléctricas certificadas y equipos de protección personal (EPP).</p>
+                        </div>
+                    </details>
+
+                    <!-- Pregunta 6 -->
+                    <details id="faq-item-6" class="faq-item">
+                        <summary class="faq-question">¿El informe técnico digital tiene un costo adicional?</summary>
+                        <div class="faq-answer">
+                            <p>No, el informe técnico digital y su almacenamiento seguro en nuestra plataforma es un servicio completamente gratuito incluido en cada uno de los trabajos de mantenimiento realizados en tu propiedad.</p>
+                        </div>
+                    </details>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Testimonios -->
+        <section id="testimonios" class="testimonials-section">
+            <div class="testimonials-container">
+                <h2 class="testimonials-section-title">Lo que dicen nuestros clientes</h2>
+                <div class="testimonials-grid">
+
+                    <!-- Testimonio 1 -->
+                    <article id="testimonial-1" class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">CM</div>
+                            <div class="testimonial-info">
+                                <h4 class="testimonial-name">Carlos Mendoza</h4>
+                                <span class="testimonial-location">Miramar</span>
+                                <div class="testimonial-stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Excelente servicio. El técnico llegó puntual, con todo su equipo de seguridad y resolvió el problema del tablero de forma impecable. Poder ver todo el historial de mi casa con mi DNI me da mucha tranquilidad."</p>
+                    </article>
+
+                    <!-- Testimonio 2 -->
+                    <article id="testimonial-2" class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">AT</div>
+                            <div class="testimonial-info">
+                                <h4 class="testimonial-name">Ana María Torres</h4>
+                                <span class="testimonial-location">Miramar</span>
+                                <div class="testimonial-stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Muy profesionales y formales. Me dio mucha confianza ver cómo trabajaban bajo protocolos tan estrictos y el orden que mantuvieron en mi hogar de principio a fin."</p>
+                    </article>
+
+                    <!-- Testimonio 3 -->
+                    <article id="testimonial-3" class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">JR</div>
+                            <div class="testimonial-info">
+                                <h4 class="testimonial-name">Jorge Luis Ramos</h4>
+                                <span class="testimonial-location">Miramar</span>
+                                <div class="testimonial-stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Por fin un servicio técnico formal. El informe digital detallado de los trabajos realizados es espectacular para llevar el control de los cambios de llaves termomagnéticas."</p>
+                    </article>
+
+                    <!-- Testimonio 4 -->
+                    <article id="testimonial-4" class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">SB</div>
+                            <div class="testimonial-info">
+                                <h4 class="testimonial-name">Sofía Benavides</h4>
+                                <span class="testimonial-location">Miramar</span>
+                                <div class="testimonial-stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"La atención por WhatsApp para coordinar fue muy rápida. Solucionaron una fuga de corriente persistente que hacía que mi recibo de luz se elevara sin sentido. Súper confiables."</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. Contacto y Footer -->
+        <section id="contacto" class="contact-section">
+            <div class="contact-container">
+                <h2 class="contact-section-title">Contáctanos</h2>
+                <form id="formulario-contacto" class="contact-form" action="https://formspree.io/f/xojorbkr" method="POST">
+                    <div class="form-group">
+                        <label for="nombre_completo" class="form-label">Nombre Completo</label>
+                        <input type="text" id="nombre_completo" name="nombre" class="form-control" required placeholder="Ingresa tu nombre y apellido">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono_celular" class="form-label">Teléfono/Celular</label>
+                        <input type="tel" id="telefono_celular" name="telefono" class="form-control" required placeholder="Ej: +51 900 000 000">
+                    </div>
+                    <div class="form-group">
+                        <label for="correo_electronico" class="form-label">Correo Electrónico</label>
+                        <input type="email" id="correo_electronico" name="email" class="form-control" required placeholder="correo@ejemplo.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje_texto" class="form-label">Mensaje</label>
+                        <textarea id="mensaje_texto" name="message" class="form-control" rows="5" required placeholder="Escribe tu mensaje detallando tu requerimiento..."></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" id="btn-enviar" class="btn btn-primary">Enviar Mensaje</button>
+                        <div id="contacto-estado" class="oculto">¡Gracias por tu mensaje! Nos pondremos en contacto pronto.</div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-info-left">
+                <div class="footer-copyright-text">
+                    © 2026 ElectroSmart. Todos los derechos reservados.
+                </div>
+                <div class="footer-school">
+                    <img src="img/logo-colegio.png" alt="Logo I.E. Jesús Maestro">
+                    <span>I.E. Jesús Maestro</span>
+                </div>
+            </div>
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/share/1E619g8M3X/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                </a>
+                <a href="https://www.instagram.com/electrosmart800" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                </a>
+                <a href="https://www.tiktok.com/@electrosmart800" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tiktok"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+                </a>
+               
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
